@@ -1,0 +1,28 @@
+.barraPrincipal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li {
+    list-style:none;
+}
+
+main {
+    height: 60vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+
+.material-icons{
+    background-color: white;
+    border: 1px;
+    border-color: black;
+}
