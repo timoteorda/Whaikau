@@ -1,9 +1,18 @@
 import React from 'react'
+import ItemCount from './ItemCount'
+import ItemListContainer from './ItemListContainer'
+
 
 const Main = () => {
+
+    const persona = {
+        nombre: 'Timoteo',
+    }
+
     return (
             <main>
-                <h1>Bienvenido a la tienda oficial de Whaikau</h1>        
+                <ItemListContainer persona = {persona} /> 
+                <ItemCount />    
             </main>
     )
 }

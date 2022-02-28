@@ -6,6 +6,7 @@ import Footer from './components/Footer.js'
 
 
 const App = () => {
+
   return <>
     <NavBar/>
     <Main/>
