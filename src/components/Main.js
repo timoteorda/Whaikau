@@ -5,14 +5,9 @@ import ItemListContainer from './ItemListContainer'
 
 const Main = () => {
 
-    const persona = {
-        nombre: 'Timoteo',
-    }
-
     return (
             <main>
-                <ItemListContainer persona = {persona} /> 
-                <ItemCount />    
+                <ItemListContainer />
             </main>
     )
 }

@@ -2,16 +2,15 @@ import React from 'react'
 import CartWidget from './CartWidget'
 
 const NavBar = () => {
-    
 
     return (
             <header>
-                <h1 className="titulo" >Whaikau</h1>
-                <ul className="barraPrincipal">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                <img className='logoWhaikau' src="../img/logoWhaikau.jpg" alt="logo" />
                 < CartWidget />
+                <ul className="barraPrincipal">
+                    <li><a className='liNav' href="#">INICIO</a></li>
+                    <li><a className='liNav' href="#">PRODUCTOS</a></li>
+                    <li><a className='liNav' href="#">CONTACTO</a></li>
                 </ul>
             </header>
             

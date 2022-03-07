@@ -1,0 +1,53 @@
+header{
+    height: 25vh;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li {
+    list-style:none;
+}
+
+.barraPrincipal{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-left: 39%;
+    margin-top: 1rem;
+}
+
+.liNav{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.liNav:hover{
+    color: gray;
+    padding: 0.5rem 0rem;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+
+.material-icons{
+    background-color: white;
+    border: 1px;
+    border-color: black;
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    transform: scale(1.2)
+}
+
+.carrito{
+    cursor: pointer;
+    margin-left: 30%;
+}
+
+.carrito:hover{
+    transform: scale(1.1);
+}

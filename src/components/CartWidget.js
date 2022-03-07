@@ -1,11 +1,9 @@
 import React from 'react'
 
 const CartWidget = () => {
-    return(
-        <span className="material-icons">
-        shopping_cart
-        </span>
-    )
+    return (
+        <img className='carrito' src= "../img/carrito.png" />
+      )
 }
 
 export default CartWidget
