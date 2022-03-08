@@ -23,7 +23,10 @@ function ItemListContainer() {
     return (
         <>
         <img className='banner' src="../img/bannerUno.jpg" alt="banner" />
-        <h1 className="tituloBienvenido">FOLLOW YOUR IDEALS</h1>
+        <div className='divIdeals'>
+            <h1 className="tituloIdeals">FOLLOW YOUR IDEALS</h1>
+            <img className='iconoOla' src="../img/ola.png" alt="Ola" />
+        </div>     
         <ItemList productos={productos}/>        
         </>
     )}
