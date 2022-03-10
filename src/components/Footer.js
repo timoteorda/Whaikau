@@ -3,16 +3,31 @@ import React from 'react'
 const Footer = () => {
     return (
             <footer>
-                <div>
-                    <h3 className='tituloFooter'>Contactanos</h3>
-                        <ul>
-                            <li className='liFooter'>Teléfono:</li>
-                            <li className='liFooter'>Mail:</li>
-                            <li className='liFooter'>Dirección: </li>
+                <div className='footerGris'>
+                    <div>
+                        <h3 className='tituloFooter'>Navegación</h3>
+                        <a href="#"><li className='liFooter'><p className='pNavegacion'>Inicio</p></li></a>
+                        <a href="#"><li className='liFooter'><p className='pNavegacion'>Productos</p></li></a>
+                        <a href="#"><li className='liFooter'><p className='pNavegacion'>Contacto</p></li></a>
+                    </div>
+                    <div>
+                        <h3 className='tituloFooter'>Contacto</h3>
+                            <ul>
+                                <li className='liFooter'><img src="../img/iconoTelefono.png" alt="Icono Telefono" /><p className='textoLiFooter'>2216363009</p></li>
+                                <li className='liFooter'><img src="../img/iconoArroba.png" alt="Icono Arroba" /><p className='textoLiFooter'>whaikau@gmail.com</p></li>
+                                <li className='liFooter'><img src="../img/iconoUbicacion.png" alt="Icono Ubicacion" /><p className='textoLiFooter'>493 n1967 gonnet</p></li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h3 className='tituloFooter'>Redes Sociales</h3>
+                        <ul className='ulRedes'>
+                            <li><a target="_blank" href="https://www.instagram.com/whaikau/"><img src="../img/iconoIg.png" alt="icono Instagram" /></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/Whaikau/"><img src="../img/iconoFb.png" alt="Icono Facebook" /></a></li>
                         </ul>
+                    </div>
                 </div>
-                <div>
-                    <h3 className='tituloFooter'>Acerca de Nosotros</h3>
+                <div className='divDerechos'>
+                    <p className='derechos'>	© Todos los derechos reservados Whaikau - 2022</p>
                 </div>
             </footer>
     )

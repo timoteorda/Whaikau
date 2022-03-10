@@ -1,16 +1,57 @@
 footer {
+    height: 24vh;
+}
+
+.footerGris{
+    background-color: #EEEEEE;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
-    background-color: #EEEEEE;
-    height: 20vh;
 }
 
 .tituloFooter{
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .liFooter{
     margin-top: 0.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
+
+.textoLiFooter{
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.pNavegacion{
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.pNavegacion:hover{
+    color: gray;
+}
+
+.ulRedes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divDerechos{
+    height: 2rem;
+}
+
+.derechos{
+    font-weight: bold;
+    margin: 1rem;
+    color: black;
+    margin-left: 38%;
+}
+

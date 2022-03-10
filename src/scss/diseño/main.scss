@@ -2,6 +2,10 @@ body{
     font-family:'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 main {
     height: 100%;
     width: 100%;
@@ -26,11 +30,28 @@ main {
     margin-left: 1rem;
 }
 
-.banner{
-    margin: 0rem 12.5%;
-    width: 75%;
-    height: 35rem;
-    border: none;
+.seguinosIg{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.divSeguinosTexto{
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.seguinosTexto{
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+}
+
+.seguinosArroba{
+    font-weight: bold;
+    color: black;
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
 }
 
                                                 //CONTADOR//
