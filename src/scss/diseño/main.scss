@@ -30,10 +30,30 @@ main {
     margin-left: 1rem;
 }
 
+.verTodosProductos{
+    background-color: rgb(170,170,170);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 20rem;
+    height: 2rem;
+    margin-left: 38%;
+    margin-top: 2rem;
+}
+
+.verTodosProductos:hover{
+    background-color: rgb(200,200,200);
+}
+                                    //AREA SEGUINOS IG INDEX
+
 .seguinosIg{
     display: flex;
     justify-content: center;
     padding: 5rem;
+}
+
+.logoIgIndex{
+    margin-top: 0.8rem;
 }
 
 .divSeguinosTexto{
@@ -50,7 +70,7 @@ main {
 .seguinosArroba{
     font-weight: bold;
     color: black;
-    margin-top: 0.3rem;
+    margin-top: 1rem;
     font-size: 1.4rem;
 }
 
@@ -66,9 +86,10 @@ main {
 }
 
 .tituloContador{
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .flexContador{

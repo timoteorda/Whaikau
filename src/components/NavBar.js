@@ -8,15 +8,21 @@ const NavBar = () => {
                 <div className='navBar'>
                     <img className='logoWhaikau' src="../img/logoWhaikau.jpg" alt="logo" />
                     < CartWidget />
-                    <ul className="barraPrincipal">
-                        <li><a className='liNav' href="#">INICIO</a></li>
-                        <li><a className='liNav' href="#">PRODUCTOS</a></li>
-                        <li><a className='liNav' href="#">CONTACTO</a></li>
+                    <ul className='ulNav'>
+                        <a href='#' className='dropbtn'>INICIO</a>
+                        <div className='dropdown dropbtn'>
+                        <a href='#' className='dropbtn'>PRODUCTOS</a>
+                            <div className='dropdown-content'>
+                                <a href="#">HOMBRE</a>
+                                <a href="#">MUJER</a>
+                                <a href="#">ACCESORIOS</a>
+                                <a href="#">MADERA</a>
+                            </div>                    
+                        </div>
+                        <a href='#' className='dropbtn'>CONTACTO</a>
                     </ul>
                 </div>    
             </header>
-            
-
     )
 }
 

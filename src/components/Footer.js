@@ -12,9 +12,9 @@ const Footer = () => {
                     </div>
                     <div>
                         <h3 className='tituloFooter'>Contacto</h3>
-                            <ul>
-                                <li className='liFooter'><img src="../img/iconoTelefono.png" alt="Icono Telefono" /><p className='textoLiFooter'>2216363009</p></li>
-                                <li className='liFooter'><img src="../img/iconoArroba.png" alt="Icono Arroba" /><p className='textoLiFooter'>whaikau@gmail.com</p></li>
+                            <ul className='ulContacto'>
+                                <li className='liFooter'><img className='icono' src="../img/iconoTelefono.png" alt="Icono Telefono" /><p className='textoLiFooter'>2216363009</p></li>
+                                <li className='liFooter'><img className='icono' src="../img/iconoArroba.png" alt="Icono Arroba" /><p className='textoLiFooter'>whaikau@gmail.com</p></li>
                                 <li className='liFooter'><img src="../img/iconoUbicacion.png" alt="Icono Ubicacion" /><p className='textoLiFooter'>493 n1967 gonnet</p></li>
                             </ul>
                     </div>

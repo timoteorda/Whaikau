@@ -15,6 +15,8 @@
     font-size: 0.7rem;
     text-align: center;
     height: 2rem;
+    font-weight: bold;
+    color: black;
 }
 
 .precio{
@@ -30,21 +32,8 @@
     height: 13rem;
 }
 
-.botonCard{
-    background-color: rgb(0,112,252);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    margin-top: 1rem;
-    width: 6rem;
-    height: 1.5rem;
-    padding: 0.1rem;
-    margin-left: 32%;
-    font-size: 0.75rem;
-}
-
 .botonCard:hover{
     cursor: pointer;
     color: white;
-    background-color: rgb(58,82,86);
+    background-color: rgb(0,100,200);
 }
