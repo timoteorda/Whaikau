@@ -1,7 +1,6 @@
 import React from 'react';
 import ItemDetail from './ItemDetail';
 import {useState, useEffect} from 'react'
-import ItemCount from './ItemCount'
 import Productos from './Productos'
 import { toast } from 'react-toastify';
 
@@ -13,22 +12,26 @@ const ItemDetailContainer = () => {
 
     useEffect(()=>{
 
-      fetch(`Productos.js/${Productos.id}`)
-      .then((response)=>{
-          toast.dismiss()
-          return response.json()
-      })
-      .then((resultado)=>{
-        setProducto(resultado)
-      })
-      .catch(()=>{
-        toast.error("Error al cargar el producto")
-      })
-      .finally(()=>{
-        setLoading(false)
-      })
-  
-    },{})
+        function getDatos (){
+            return new Promise((resolve, reject) =>{
+            setTimeout(()=>{
+                resolve(Productos[4]);   
+            }, 2000);
+            });
+        }
+
+        getDatos()
+            .then((resultado)=>{
+                toast.dismiss()
+                setProducto(resultado)
+            })            
+            .catch(()=>{
+                toast.error("Error al cargar los productos")
+            })
+            .finally(()=>{
+                setLoading(false)
+            })
+    },[])
 
         if (loading){
             return toast.info('Cargando producto...', {
@@ -43,8 +46,7 @@ const ItemDetailContainer = () => {
         } else {
             return (
                 <>
-                    <ItemDetail producto={producto}/>
-                    <ItemCount/>                
+                    <ItemDetail producto={producto}/>               
                 </>
             )
         } 

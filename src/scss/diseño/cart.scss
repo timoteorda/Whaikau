@@ -1,0 +1,91 @@
+.cart{
+    display: flex;
+    width: 80%;
+    margin: 2% 10%;
+    border: solid 1px gray;
+    border-radius: 15px;
+}
+
+.imagenCart{
+    height: 28rem;
+    margin-left: 15%;
+}
+
+.derechaCart{
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCart{
+    font-size: 2rem;
+    margin-left: 14rem;
+    margin-top: 2rem;
+}
+
+.precioCart{
+    margin-left: 14rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.counterCart{
+    margin-top: -2rem;
+}
+
+
+                                                //CONTADOR//
+
+.divContador{
+    border: solid 1px gray;
+    height: 13rem;
+    margin-left:35%;
+    margin-top: 4rem;
+    border-radius: 25px;
+}
+
+.tituloContador{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.flexContador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid 1px lightblue;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 2.3rem;
+}
+
+.botonContador{ 
+    background-color: white;
+    color: lightblue;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cantContador{
+    margin-top: 0.5rem
+}
+
+.agregarCarrito{
+    margin: 2rem 5.7rem;
+    background-color: lightblue;
+    border: none;
+    font-weight: bold;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.agregarCarrito:hover{
+    background-color: rgb(72, 192, 182);
+}
