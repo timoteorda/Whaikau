@@ -1,0 +1,29 @@
+.contenedorPaga{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.flexPaga{
+    display: flex;
+    border-right: solid 1px gray;
+}
+
+.contenedorTitulos{
+    margin-left: 2rem;
+    padding-right: 2rem;
+}
+
+.tituloPago{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.subtituloPago{
+    font-size: 0.9rem;
+    color: black;
+}

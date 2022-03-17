@@ -14,9 +14,7 @@ const ItemDetailContainer = () => {
 
         function getDatos (){
             return new Promise((resolve, reject) =>{
-            setTimeout(()=>{
-                resolve(Productos[4]);   
-            }, 2000);
+                resolve(Productos[0]);   
             });
         }
 
@@ -36,7 +34,7 @@ const ItemDetailContainer = () => {
         if (loading){
             return toast.info('Cargando producto...', {
               position: "top-right",
-              autoClose: 2000,
+              autoClose: 1000,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,

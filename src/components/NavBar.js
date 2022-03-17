@@ -1,29 +1,37 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom'
+import Productos from './Productos'
+
 
 const NavBar = () => {
+
+    const productosHombre = Productos.filter(x => x.sexo == 'hombre')
+    const productosMujer = Productos.filter(x => x.sexo == 'mujer')
+
+    console.log(productosHombre)
+    console.log(productosMujer)
 
     return (
             <header>
                 <div className='navBar'>
-                    <a href="#"><img className='logoWhaikau' src="../img/logoWhaikau.jpg" alt="logo" /></a>
+                    <Link to="/"><img className='logoWhaikau' src="../img/logoWhaikau.jpg" alt="logo" /></Link>
                     < CartWidget />
                     <ul className='ulNav'>
                         <div>
-                            <a href='#' className='dropbtn'>INICIO</a>
+                        <Link to="/" className='dropbtn'>INICIO</Link>
                         </div>                        
                         <div className='dropdown'>
-                            <a href='#' className='dropbtn'>PRODUCTOS</a>
+                        <Link to="/productos" className='dropbtn'>PRODUCTOS</Link>
                                 <div className='dropdown-content'>
-                                    <a href="#">HOMBRE</a>
-                                    <a href="#">MUJER</a>
-                                    <a href="#">ACCESORIOS</a>
-                                    <a href="#">MADERA</a>
+                                    <Link to='/categoria/hombre' >HOMBRE</Link>
+                                    <Link to='/categoria/mujer' >MUJER</Link>
+                                    <Link to='/categoria/accesorios' >ACCESORIOS</Link>
+                                    <Link to='/categoria/madera' >MADERA</Link>
                                 </div>                    
                         </div>
                         <div>
-                            <a href='#' className='dropbtn'>CONTACTO</a>   
+                        <Link to='/contacto' className='dropbtn'>CONTACTO</Link>   
                         </div>                        
                     </ul>
                 </div>    

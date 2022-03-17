@@ -3,36 +3,26 @@ import ItemCount from './ItemCount'
 import ItemListContainer from './ItemListContainer'
 import ItemDetailContainer from './ItemDetailContainer'
 import Banner from './Banner'
+import Contacto from './Contacto'
+import Cart from './Cart'
+import { Route, Routes } from 'react-router-dom'
+import MensajePagos from './MensajePagos'
+
 
 
 
 const Main = () => {
 
     return (
-            <main>
-                <Banner/>
-                <div className='divIdeals'>
-                    <h1 className="tituloIdeals">FOLLOW YOUR IDEALS</h1>
-                    <img className='iconoOla' src="../img/ola.png" alt="Ola" />
-                </div> 
-                <ItemListContainer />
-                <ItemDetailContainer />
-                <img className='banner' src="../img/bannerFin.jpg" alt="" />
-                <a href="https://www.instagram.com/whaikau/"  target="_blank">
-                    <div className='seguinosIg'>
-                        <div className='logoIgIndex'>
-                            <img src="../img/logoInstagram.png" alt="" />
-                        </div>
-                        <div className='divSeguinosTexto'>
-                            <div>
-                                <p className='seguinosTexto'>Seguinos en Instagram</p>
-                            </div>
-                            <div>
-                                <p className='seguinosArroba'>@Whaikau</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+            <main>               
+            <Routes>
+                <Route path="/" element={<ItemListContainer/>} />
+                <Route path="/categoria/:idCategoria" element={<ItemListContainer/>} />
+                <Route path="/producto/:idProducto" element={<ItemDetailContainer/>} />
+                <Route path="/contacto" element={<Contacto/>} />
+                <Route path="/cart" element={<Cart/>} />
+            </Routes>
+            <MensajePagos/>
             </main>
     )
 }

@@ -1,9 +1,7 @@
 .cart{
     display: flex;
     width: 80%;
-    margin: 2% 10%;
-    border: solid 1px gray;
-    border-radius: 15px;
+    margin: 5% 10%;
 }
 
 .imagenCart{
@@ -34,10 +32,22 @@
 }
 
 
+                                                //PAGINA CART
+
+.mensajeCarrito{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+    border-bottom: solid 1px lightgray;
+    padding: 1rem;
+}
+
+
                                                 //CONTADOR//
 
 .divContador{
-    border: solid 1px gray;
     height: 13rem;
     margin-left:35%;
     margin-top: 4rem;
@@ -71,7 +81,9 @@
 }
 
 .cantContador{
-    margin-top: 0.5rem
+    margin-top: 0.8rem;
+    color: black;
+    font-size: 1.5rem;
 }
 
 .agregarCarrito{

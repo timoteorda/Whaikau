@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 function Item ({producto}) {
   return (
     <div className='cardProducto'>
-      <a href="#"><img className="imagenCard" src={producto.img} alt={producto.title} /></a>
-      <a href='#'><h2 className='producto'>{producto.title}</h2></a>
+      <Link to={`/producto/${producto.id}`} ><img className="imagenCard" src={producto.img} alt={producto.title} /></Link>
+      <Link to={`/producto/${producto.id}`}><h2 className='producto'>{producto.title}</h2></Link>
       <h3 className='precio'>${producto.precio}</h3>
     </div>
   );

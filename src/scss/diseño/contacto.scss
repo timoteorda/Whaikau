@@ -1,0 +1,55 @@
+.divContacto{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.contenedorContacto{
+    width: 33.33%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactoRow{
+    display: flex;
+}
+
+.pContacto{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.pContactoA{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: black;
+}
+
+.pContactoA:hover{
+    color: gray;
+}
+
+
+                                                    //form
+
+.form{
+    margin-bottom: 2rem;
+}
+
+.tituloForm{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+
+.cuadradoMensaje{
+    width: 100%;
+    height: 8rem;
+}

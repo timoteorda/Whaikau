@@ -17,7 +17,7 @@ export const ItemDetail = ({producto}) => {
           <div className='counterCart'>
             <ItemCount/>
           </div>
-        </div>             
+        </div>            
       </div>
 
   )

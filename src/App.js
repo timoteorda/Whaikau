@@ -5,17 +5,19 @@ import Main from './components/Main.js'
 import Footer from './components/Footer.js'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 
 const App = () => {
-
-  return <>
-    <NavBar/>
-    <Main/>
-    <Footer/>
-    <ToastContainer/>
-  </>
+  return (
+    <BrowserRouter>
+      <NavBar/>
+      <Main/>
+      <Footer/>
+      <ToastContainer/>
+    </BrowserRouter>
+  )
+    
 }
 
 export default App

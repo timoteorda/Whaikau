@@ -15,7 +15,7 @@ const Footer = () => {
                             <ul className='ulContacto'>
                                 <li className='liFooter'><img className='icono' src="../img/iconoTelefono.png" alt="Icono Telefono" /><p className='textoLiFooter'>2216363009</p></li>
                                 <li className='liFooter'><img className='icono' src="../img/iconoArroba.png" alt="Icono Arroba" /><p className='textoLiFooter'>whaikau@gmail.com</p></li>
-                                <li className='liFooter'><img src="../img/iconoUbicacion.png" alt="Icono Ubicacion" /><p className='textoLiFooter'>493 n1967 gonnet</p></li>
+                                <li className='liFooter'><img className='icono' src="../img/iconoUbicacion.png" alt="Icono Ubicacion" /><p className='textoLiFooter'>493 n°1967 Manuel B Gonnet</p></li>
                             </ul>
                     </div>
                     <div>
