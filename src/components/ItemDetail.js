@@ -1,7 +1,13 @@
+import { getByDisplayValue } from '@testing-library/react'
 import React from 'react'
 import ItemCount from './ItemCount'
 
-export const ItemDetail = ({producto}) => {
+const ItemDetail = ({producto}) => {
+
+  const onAdd = (cant) => {
+      console.log("Se agregaron", cant, "unidades al carrito")
+  }
+
   return (
       <div className='cart'>
         <div>
@@ -15,7 +21,7 @@ export const ItemDetail = ({producto}) => {
             <h2 className='precioCart'>${producto.precio}</h2>
           </div>
           <div className='counterCart'>
-            <ItemCount/>
+            <ItemCount stock ={5} onAdd = {onAdd} />
           </div>
         </div>            
       </div>

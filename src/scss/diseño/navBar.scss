@@ -19,6 +19,21 @@ li {
     box-shadow: 1px 1px 3px #999;
 }
 
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 6%;
+}
+
+.buscarNav{
+    width: 12rem;
+    height: 2rem;
+    margin-top: 4rem;
+    border: none;
+    border-bottom: solid 1px lightgray;
+}
+
 .ulNav{
     display: flex;
     justify-content: space-around;
@@ -32,7 +47,7 @@ li {
     font-family:'Montserrat', sans-serif;
     background-color: white;
     color: black;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: bold;
     padding: 0.5rem;
     border: none;
@@ -73,7 +88,6 @@ li {
 .dropdown-content a:hover {
     background-color: #c6c6c6;
     color: white;
-    border-top: solid 1px gray;
 }
 
 /* Show the dropdown menu on hover */

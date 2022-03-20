@@ -6,17 +6,22 @@ import Productos from './Productos'
 
 const NavBar = () => {
 
-    const productosHombre = Productos.filter(x => x.sexo == 'hombre')
-    const productosMujer = Productos.filter(x => x.sexo == 'mujer')
+    const productosHombre = Productos.filter(x => x.categoria == 'hombre')
+    const productosMujer = Productos.filter(x => x.categoria == 'mujer')
+    const madera = Productos.filter(x => x.categoria == "madera")
 
     console.log(productosHombre)
     console.log(productosMujer)
+    console.log(madera)
 
     return (
             <header>
                 <div className='navBar'>
-                    <Link to="/"><img className='logoWhaikau' src="../img/logoWhaikau.jpg" alt="logo" /></Link>
-                    < CartWidget />
+                    <div className='navegacion'>
+                        <input className='buscarNav' type="text" placeholder='Buscar'/>
+                        <Link to="/"><img className='logoWhaikau' src="../img/logoWhaikau.jpg" alt="logo" /></Link>
+                        < CartWidget />
+                    </div>                 
                     <ul className='ulNav'>
                         <div>
                         <Link to="/" className='dropbtn'>INICIO</Link>
