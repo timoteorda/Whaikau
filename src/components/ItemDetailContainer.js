@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
 
         function getDatos (){
             return new Promise((resolve, reject) =>{
-                resolve(Productos[0]);   
+                resolve(Productos[5]);   
             });
         }
 
