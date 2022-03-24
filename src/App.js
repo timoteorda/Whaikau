@@ -6,16 +6,18 @@ import Footer from './components/Footer.js'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter } from 'react-router-dom'
-
+import MiProvider from './components/Contexto.js'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <NavBar/>
-      <Main/>
-      <Footer/>
-      <ToastContainer/>
-    </BrowserRouter>
+      <MiProvider>
+        <NavBar/>
+        <Main/>
+      </MiProvider>
+        <Footer/>
+        <ToastContainer/>
+      </BrowserRouter>
   )
     
 }

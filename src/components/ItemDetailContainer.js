@@ -3,6 +3,7 @@ import ItemDetail from './ItemDetail';
 import {useState, useEffect} from 'react'
 import Productos from './Productos'
 import { toast } from 'react-toastify';
+import { useParams } from "react-router-dom";;
 
 
 const ItemDetailContainer = () => {
@@ -10,14 +11,19 @@ const ItemDetailContainer = () => {
     const [producto, setProducto] = useState({});
     const [loading, setLoading] = useState(true);
 
+    const { idProducto } = useParams()
+
+    const buscarProducto = Productos.filter(
+        (producto) => producto.id === parseInt(idProducto)       
+        );
+
     useEffect(()=>{
 
         function getDatos (){
             return new Promise((resolve, reject) =>{
-                resolve(Productos[5]);   
+                resolve(Productos[buscarProducto]);   
             });
         }
-
         getDatos()
             .then((resultado)=>{
                 toast.dismiss()

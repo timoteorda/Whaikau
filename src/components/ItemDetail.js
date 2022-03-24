@@ -1,11 +1,14 @@
-import { getByDisplayValue } from '@testing-library/react'
 import React from 'react'
 import ItemCount from './ItemCount'
+import { useState } from 'react'
+
 
 const ItemDetail = ({producto}) => {
 
-  const onAdd = (cant) => {
-      console.log("Se agregaron", cant, "unidades al carrito")
+  const [seleccionado,setSeleccionado] = useState(false)
+
+  const onAdd= (cantidadSeleccionada) => {
+      setSeleccionado(cantidadSeleccionada)
   }
 
   return (

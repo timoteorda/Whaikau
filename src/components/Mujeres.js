@@ -1,9 +1,12 @@
-import React, {useEffect, useState} from 'react'
-import ItemList from './ItemList'
+import React from 'react'
 import Productos from './Productos'
 import { toast } from 'react-toastify';
+import ItemList from './ItemList'
+import { useEffect, useState } from 'react';
 
-function ItemListContainer() {
+const Mujeres = () => {
+
+    const productosMujer = Productos.filter(x => x.categoria == 'mujer')
 
     const[productos ,setProductos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -12,7 +15,7 @@ function ItemListContainer() {
 
         function getDatos (){
             return new Promise((resolve, reject) =>{            
-                resolve(Productos);   
+                resolve(productosMujer);   
             });
         }
 
@@ -42,6 +45,7 @@ function ItemListContainer() {
     } else{
         return (
         <>
+        <img className='bannerProductos' src="../img/bannerProductos.jpg" alt="" />
         <div className='divIdeals'>
             <h1 className="tituloIdeals">FOLLOW YOUR IDEALS</h1>
             <img className='iconoOla' src="../img/ola.png" alt="Ola" />
@@ -51,7 +55,4 @@ function ItemListContainer() {
     )}
 }
 
-
-
-
-export default ItemListContainer
+export default Mujeres

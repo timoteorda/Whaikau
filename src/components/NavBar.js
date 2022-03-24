@@ -2,18 +2,10 @@ import React from 'react'
 import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom'
 import Productos from './Productos'
+import {contexto} from './Contexto'
 
 
 const NavBar = () => {
-
-    const productosHombre = Productos.filter(x => x.categoria == 'hombre')
-    const productosMujer = Productos.filter(x => x.categoria == 'mujer')
-    const madera = Productos.filter(x => x.categoria == "madera")
-
-    console.log(productosHombre)
-    console.log(productosMujer)
-    console.log(madera)
-
     return (
             <header>
                 <div className='navBar'>
