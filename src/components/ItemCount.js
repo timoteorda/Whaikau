@@ -28,7 +28,7 @@ import { Link } from 'react-router-dom';
                         </div>
                     <button className='agregarCarrito' onClick={handleCarrito}>Agregar al carrito</button>
                 </div>   
-            <Link to="/Cart">IR AL CARRITO</Link>
+            <Link to="/Cart"><button className='linkCarrito'>Ir al carrito</button></Link>
         </div>
                             
     )

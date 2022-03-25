@@ -1,7 +1,7 @@
 .cart{
     display: flex;
     width: 80%;
-    margin: 5% 10%;
+    margin-left: 25%;
 }
 
 .imagenCart{
@@ -44,6 +44,22 @@
     padding: 1rem;
 }
 
+.botonEliminarCart{
+    margin-left:5.7rem;
+    background-color: lightgray;
+    border: none;
+    font-weight: bold;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.botonEliminarCart:hover{
+    background-color: gray;
+}
+
 
                                                 //CONTADOR//
 
@@ -67,7 +83,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: solid 1px lightblue;
+    border: solid 1px lightgray;
     border-radius: 10px;
     width: 80%;
     margin-left: 2.3rem;
@@ -90,7 +106,7 @@
 
 .agregarCarrito{
     margin: 2rem 5.7rem;
-    background-color: lightblue;
+    background-color: lightgray;
     border: none;
     font-weight: bold;
     width: 12rem;
@@ -101,5 +117,21 @@
 }
 
 .agregarCarrito:hover{
-    background-color: rgb(72, 192, 182);
+    background-color: gray;
+}
+
+.linkCarrito{
+    margin-left:5.7rem;
+    background-color: lightgray;
+    border: none;
+    font-weight: bold;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.linkCarrito:hover{
+    background-color: gray;
 }

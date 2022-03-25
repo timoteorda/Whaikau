@@ -24,6 +24,7 @@ const ItemDetailContainer = () => {
                 resolve(buscarProducto);   
             });
         }
+        console.log(buscarProducto)
         getDatos()
             .then((resultado)=>{
                 toast.dismiss()

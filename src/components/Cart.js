@@ -18,7 +18,7 @@ const Cart = (producto) => {
           <h1>{producto.title}</h1>
           <h3>{producto.precio}</h3>  
           <h4>Total: {producto.precio * producto.cantidad}</h4>
-          <button onClick={handleBorrar}>ELIMINAR PRODUCTO</button>
+          <button className='botonEliminarCart' onClick={handleBorrar}>ELIMINAR PRODUCTO</button>
         </div>
     </div>
   )

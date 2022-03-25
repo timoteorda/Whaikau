@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const ItemDetail = ({producto}) => {
 
-  const [seleccionado,setSeleccionado] = useState(false)
+  const [seleccionado,setSeleccionado] = useState(true)
 
   const onAdd= (cantidadSeleccionada) => {
       setSeleccionado(cantidadSeleccionada)
@@ -24,7 +24,7 @@ const ItemDetail = ({producto}) => {
             <h2 className='precioCart'>${producto.precio}</h2>
           </div>
           <div className='counterCart'>
-            <ItemCount stock ={5} onAdd = {onAdd} />
+            <ItemCount stock ={producto.stock} onAdd = {onAdd} />
           </div>
         </div>            
       </div>
