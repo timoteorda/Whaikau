@@ -1,13 +1,13 @@
 .sectionCard{
     display: flex;
     flex-wrap: wrap;
-    margin: 0rem 12.5%;
-    width: 75%;
+    margin: 0rem 10%;
+    width: 80%;
 }
 
 .cardProducto{
     width: 25%;
-    height: 14rem;
+    height: 16rem;
     margin-bottom: 6rem;
 }
 
@@ -15,6 +15,7 @@
     font-size: 0.7rem;
     text-align: center;
     height: 2rem;
+    margin-top: 0.5rem;
     font-weight: bold;
     color: black;
 }
@@ -31,7 +32,7 @@
 }
 
 .imagenCard{
-    margin-left: 15%;
+    margin-left: 18%;
     width: 11rem;
     height: 13rem;
 }

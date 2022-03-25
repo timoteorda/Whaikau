@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
 
     const { idProducto } = useParams()
 
-    const buscarProducto = Productos.filter(
+    const buscarProducto = Productos.find(
         (producto) => producto.id === parseInt(idProducto)       
         );
 

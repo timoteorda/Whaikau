@@ -174,6 +174,183 @@ const Productos = [{
     "stock": 4,
     "categoria": "madera",
     "tipo": "balance board"
+  },{
+    "id": 23,
+    "title": "PONCHO CAMBIADOR",
+    "precio": 3650.00,
+    "img": "../img/ponchoCambiador.jpg",
+    "stock": 8,
+    "categoria": "accesorios",
+    "tipo": "poncho cambiador"
+  },{
+    "id": 24,
+    "title": "GORRO AUSTRALIANO",
+    "precio": 2850.00,
+    "img": "../img/gorroAustralianoNegro.jpg",
+    "stock": 9,
+    "categoria": "accesorios",
+    "tipo": "gorro australiano"
+  },{
+    "id": 25,
+    "title": "GORRO DE LANA",
+    "precio": 1760.00,
+    "img": "../img/gorroLanaBlanco.jpg",
+    "stock": 4,
+    "categoria": "accesorios",
+    "tipo": "gorro de lana"
+  },{
+    "id": 26,
+    "title": "GORRO DE LANA INGLES",
+    "precio": 1760.00,
+    "img": "../img/gorroLanaIngles.jpg",
+    "stock": 4,
+    "categoria": "accesorios",
+    "tipo": "gorro de lana"
+  },{
+    "id": 27,
+    "title": "GORRO DE LANA",
+    "precio": 1760.00,
+    "img": "../img/gorroLanaRosa.jpg",
+    "stock": 4,
+    "categoria": "accesorios",
+    "tipo": "gorro de lana"
+  },{
+    "id": 28,
+    "title": "GORRO DE LANA",
+    "precio": 1760.00,
+    "img": "../img/gorroLanaAmarillo.jpg",
+    "stock": 4,
+    "categoria": "accesorios",
+    "tipo": "gorro de lana"
+  },{
+    "id": 29,
+    "title": "GORRO DE LANA",
+    "precio": 1760.00,
+    "img": "../img/gorroLanaMarron.jpg",
+    "stock": 4,
+    "categoria": "accesorios",
+    "tipo": "gorro de lana"
+  },{
+    "id": 30,
+    "title": "DECK",
+    "precio": 3500.00,
+    "img": "../img/deck.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "deck"
+  },{
+    "id": 31,
+    "title": "BOLSO PLAYERO BHATIK",
+    "precio": 2550.00,
+    "img": "../img/bolsoPlayero.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "bolso"
+  },{
+    "id": 32,
+    "title": "GORRA PERLA ETIK",
+    "precio": 1760.00,
+    "img": "../img/gorraPerlaGris.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "gorra"
+  },{
+    "id": 33,
+    "title": "SKATE SECRET",
+    "precio": 15250.00,
+    "img": "../img/skateSecret.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "skate"
+  },{
+    "id": 34,
+    "title": "PILUSO WHITE",
+    "precio": 2250.00,
+    "img": "../img/pilusoBlanco.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "piluso"
+  },{
+    "id": 35,
+    "title": "BILLETERA ECO PAPER",
+    "precio": 950.00,
+    "img": "../img/billeteraEco.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "billetera"
+  },{
+    "id": 36,
+    "title": "RIÑONERA",
+    "precio": 1850.00,
+    "img": "../img/riñonera.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "riñonera"
+  },{
+    "id": 37,
+    "title": "GORRA CLASIK NEGRA",
+    "precio": 1750.00,
+    "img": "../img/gorraClasicNegra.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "gorra"
+  },{
+    "id": 38,
+    "title": "TAZA",
+    "precio": 880.00,
+    "img": "../img/taza.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "taza"
+  },{
+    "id": 39,
+    "title": "MEDIAS",
+    "precio": 660.00,
+    "img": "../img/medias.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "medias"
+  },{
+    "id": 40,
+    "title": "GORRA PERLA",
+    "precio": 1760.00,
+    "img": "../img/gorraPerlaWhaikau.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "gorra"
+  },{
+    "id": 41,
+    "title": "GORRA CLASIK AZUL",
+    "precio": 1760.00,
+    "img": "../img/gorraClasicAzul.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "gorra"
+  },{
+    "id": 42,
+    "title": "GORRA CLASIK MARRON",
+    "precio": 1760.00,
+    "img": "../img/gorraClasicMarron.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "gorra"
+  },{
+    "id": 43,
+    "title": "DECK FUNBOARD",
+    "precio": 3500.00,
+    "img": "../img/deckFunboard.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "deck"
+  },{
+    "id": 44,
+    "title": "GORRA CURVA BLACK",
+    "precio": 1760.00,
+    "img": "../img/gorraCurvaBlack.jpg",
+    "stock": 5,
+    "categoria": "accesorios",
+    "tipo": "gorra"
   }]
+
 
 export default Productos
