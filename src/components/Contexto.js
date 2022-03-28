@@ -5,24 +5,32 @@ const { Provider } = contexto
 
 const MiProvider = ({ children }) => {
 
+    const [cantidad, setCantidad] = useState(0) //Para el total de productos en el carrito en navbar
     const [carrito, setCarrito] = useState([])
-    const [cantidad, setCantidad] = useState(0)
-    const [total, setTotal] = useState(false)
+    const [total, setTotal] = useState(false) // Precio total del carrito
+    const yaExisteEnCarrito = (id) => {
+        return carrito.some(function(producto) {
+            return producto.id === id
+    })}
 
     const addItem = (producto, cantidad) => {
-        const copiaCarrito = [...carrito];
-        const itemAlCarrito = {... producto,cantidad}
-
-        copiaCarrito.push(itemAlCarrito);
-        setCarrito(copiaCarrito)
-    }
-
-    const yaExisteEnCarrito = (id) => {
-
-    }
+        setCantidad(cantidad + 1)
+        const copiaCarrito = [...carrito]
+        const itemCarrito = {...producto, cantidad}
+        
+        if(yaExisteEnCarrito(producto.id)){
+            let index = copiaCarrito.findIndex(item => item.id === producto.id)
+            copiaCarrito[index].cantidad += 1
+        }
+        else{
+            copiaCarrito.push(itemCarrito)
+            setCarrito(copiaCarrito) 
+        }
+    }   
 
     const borrarProducto = (id) => {
-
+        setCarrito(carrito.filter((producto) => producto.id !== id));
+        setCantidad(cantidad - 1)
     };
 
     const limpiarCarrito = () => {
@@ -34,6 +42,9 @@ const MiProvider = ({ children }) => {
         cantidad,
         total,
         addItem,
+        borrarProducto,
+        limpiarCarrito,
+        yaExisteEnCarrito
     }
 
     return (

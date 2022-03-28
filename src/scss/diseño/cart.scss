@@ -5,7 +5,7 @@
     height: 90vh;
 }
 
-.derechaCart{
+.derechaDetail{	
     margin-top: 2rem;
     margin-left: 3rem;
     width: 55%;
@@ -13,25 +13,81 @@
     flex-direction: column;
 }
 
-.tituloCart{
+.tituloDetail{
     font-weight: bold;
     font-size: 1.6rem;
     margin-left: 14rem;
     margin-top: 2rem;
 }
 
-.precioCart{
+.precioDetail{
     margin-left: 14rem;
     font-weight: bold;
     margin-top: 2rem;
 }
 
-.counterCart{
+.counterDetail{
     margin-top: -2rem;
 }
 
 
                                                 //PAGINA CART
+
+.carritoVacio{
+    font-size: 1.6rem;
+    margin-left: 31%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.vaciarCarrito{
+    background-color: gray;
+    border: 1px solid lightgray;
+    width: 12rem;
+    margin-left: 75%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1rem;
+}
+
+.vaciarCarrito:hover{
+    background-color: lightgray;
+    color: white;
+}
+
+.contenedorCarrito{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5rem;
+}
+
+.flexCarrito{
+    display: flex;
+    margin: 0% 10%;
+    justify-content: space-around;
+}
+
+.derechaCarrito{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.tituloCarrito{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cantidadCarrito{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+
+}
+
+.totalCarrito{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
 
 .mensajeCarrito{
     margin-top: 1rem;
@@ -43,22 +99,22 @@
     padding: 1rem;
 }
 
-.botonEliminarCart{
-    margin-left:5.7rem;
-    background-color: lightgray;
+.botonEliminarCarrito{
+    margin-top: 2rem;
+    background-color: gray;
     border: none;
-    font-weight: bold;
-    width: 12rem;
+    width: 18rem;
     height: 3rem;
     border-radius: 10px;
     font-family:'Montserrat', sans-serif;
     cursor: pointer;
+    color: white;
 }
 
-.botonEliminarCart:hover{
-    background-color: gray;
+.botonEliminarCarrito:hover{
+    background-color: lightgray;
+    color: white;
 }
-
 
                                                 //CONTADOR//
 

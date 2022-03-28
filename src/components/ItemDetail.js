@@ -1,29 +1,34 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import { useState } from 'react'
-
+import Contexto from './Contexto'
+import { useContext } from 'react'
+import { contexto } from './Contexto'
 
 const ItemDetail = ({producto}) => {
 
+  const {addItem} = useContext(contexto)
+  
   const [seleccionado,setSeleccionado] = useState(true)
 
-  const onAdd= (cantidadSeleccionada) => {
-      setSeleccionado(cantidadSeleccionada)
+  const onAdd= (cant) => {
+      setSeleccionado(cant)
+      addItem(producto, cant)
   }
 
   return (
       <div className='cart'>
         <div>
-          <img className='imagenCart' src={producto.img} alt={producto.title} />
+          <img className='imagenDetail' src={producto.img} alt={producto.title} />
         </div>
-        <div className='derechaCart'>
+        <div className='derechaDetail'>
           <div>
-           <h1 className='tituloCart'>{producto.title}</h1>
+           <h1 className='tituloDetail'>{producto.title}</h1>
           </div>
           <div>
-            <h2 className='precioCart'>${producto.precio}</h2>
+            <h2 className='precioDetail'>${producto.precio}</h2>
           </div>
-          <div className='counterCart'>
+          <div className='counterDetail'>
             <ItemCount stock ={producto.stock} onAdd = {onAdd} />
           </div>
         </div>            

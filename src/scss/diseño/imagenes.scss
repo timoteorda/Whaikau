@@ -36,8 +36,8 @@
     margin-right: 10%;
 }
 
-.imagenCart{
-    margin-top: 4rem;
+.imagenDetail{
+    margin-top: 5rem;
     height: 25rem;
     margin-left: 25%;    
     -webkit-transition: all .2s ease-in-out;
@@ -46,9 +46,14 @@
     -ms-transition: all .2s ease-in-out;
 }
  
-.imagenCart:hover {
+.imagenDetail:hover {
     -webkit-transform: scale(1.3); 
     -moz-transform: scale(1.3);
     -o-transform: scale(1.3);
     transform: scale(1.3);
+}
+
+.imagenCarrito{
+    height: 20rem;
+    margin-top: 3rem;
 }

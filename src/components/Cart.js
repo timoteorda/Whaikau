@@ -1,27 +1,48 @@
 import React, { useContext } from 'react'
 import {contexto} from './Contexto'
-import Productos from './Productos'
+
+
 
 const Cart = (producto) => {
 
-    const {carrito, total, setCarrito, borrarProducto} = useContext(contexto)
+    const {borrarProducto, limpiarCarrito} = useContext(contexto)
 
-    const handleBorrar = () =>{
-        console.log("Producto eliminado")
-    }
+    const {carrito, total, setCarrito} = useContext(contexto)
+        
 
-  return (
+  if (carrito == 0) {
+    return (
+      <div>
+          <h3 className='mensajeCarrito'>El carrito no reserva los productos hasta que la compra no haya sido confirmada</h3>
+          <h2 className='carritoVacio'>Actualmente el carrito se encuentra vacío</h2>
+      </div>
+
+    )
+  } else 
+      return (
     <div>
-      <h3 className='mensajeCarrito'>El carrito de compras no reserva los productos hasta que la compra no haya sido confirmada</h3>
-        <div key={producto.id}>
-          <img src="" alt="" />
-          <h1>{producto.title}</h1>
-          <h3>{producto.precio}</h3>  
-          <h4>Total: {producto.precio * producto.cantidad}</h4>
-          <button className='botonEliminarCart' onClick={handleBorrar}>ELIMINAR PRODUCTO</button>
+      <h3 className='mensajeCarrito'>El carrito no reserva los productos hasta que la compra no haya sido confirmada</h3>
+      <button className='vaciarCarrito' onClick={limpiarCarrito}>LIMPIAR CARRITO</button>
+      <div className='contenedorCarrito'>
+            {carrito.map(producto => (
+                <div className='flexCarrito' key={producto.id}>
+                  <div>
+                    <img className='imagenCarrito' src={producto.img} alt="" />
+                  </div>
+                  <div className='derechaCarrito'>
+                    <h2 className='tituloCarrito'>{producto.title}</h2>
+                    <h4 className='cantidadCarrito'>Precio unitario: {producto.precio}$</h4>
+                    <h4 className='cantidadCarrito'>Cantidad: {producto.cantidad}</h4>
+                    <h5 className='totalCarrito'>Total:  ${producto.cantidad * producto.precio}</h5>
+                    <button className='botonEliminarCarrito' onClick={borrarProducto}>ELIMINAR DEL CARRITO</button>
+                  </div>
+                </div>
+            ))}
         </div>
     </div>
   )
 }
+
+
 
 export default Cart
