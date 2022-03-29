@@ -24,7 +24,6 @@ const ItemDetailContainer = () => {
                 resolve(buscarProducto);   
             });
         }
-        console.log(buscarProducto)
         getDatos()
             .then((resultado)=>{
                 toast.dismiss()
@@ -40,8 +39,8 @@ const ItemDetailContainer = () => {
 
         if (loading){
             return toast.info('Cargando producto...', {
-              position: "top-right",
-              autoClose: 1000,
+              position: "top-left",
+              autoClose: 500,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,

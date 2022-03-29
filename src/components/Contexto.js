@@ -7,36 +7,47 @@ const MiProvider = ({ children }) => {
 
     const [cantidad, setCantidad] = useState(0) //Para el total de productos en el carrito en navbar
     const [carrito, setCarrito] = useState([])
-    const [total, setTotal] = useState(false) // Precio total del carrito
+    const [total, setTotal] = useState(0) // Precio total del carrito
+    
+    
     const yaExisteEnCarrito = (id) => {
         return carrito.some(function(producto) {
             return producto.id === id
     })}
 
-    const addItem = (producto, cantidad) => {
-        setCantidad(cantidad + 1)
-        const copiaCarrito = [...carrito]
-        const itemCarrito = {...producto, cantidad}
+    const addItem = (producto, nuevaCantidad) => {
         
+        const copia = carrito.slice(0)
+        copia.push({ ...producto, nuevaCantidad })
+        setCantidad(cantidad + nuevaCantidad)
+        setTotal(total + producto.precio * nuevaCantidad)
+
         if(yaExisteEnCarrito(producto.id)){
-            let index = copiaCarrito.findIndex(item => item.id === producto.id)
-            copiaCarrito[index].cantidad += 1
+            let index = copia.findIndex(item => item.id === producto.id)
+            copia[index].cantidad += 1
+            setCantidad(nuevaCantidad + 1)
         }
         else{
-            copiaCarrito.push(itemCarrito)
-            setCarrito(copiaCarrito) 
+            setCarrito(copia) 
+            setCantidad(cantidad + 1)
         }
-    }   
+    };
 
     const borrarProducto = (id) => {
         setCarrito(carrito.filter((producto) => producto.id !== id));
-        setCantidad(cantidad - 1)
     };
+    
+    const finalizarCompra = () => {
+        console.log("Gracias por su compra")
+    }
 
     const limpiarCarrito = () => {
         setCarrito([])
+        setCantidad(0)
+        setTotal(0)
     }
- 
+
+
     const valorProvider = {
         carrito,
         cantidad,
@@ -44,7 +55,8 @@ const MiProvider = ({ children }) => {
         addItem,
         borrarProducto,
         limpiarCarrito,
-        yaExisteEnCarrito
+        yaExisteEnCarrito,
+        finalizarCompra
     }
 
     return (

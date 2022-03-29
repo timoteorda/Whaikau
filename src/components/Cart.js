@@ -1,13 +1,12 @@
 import React, { useContext } from 'react'
 import {contexto} from './Contexto'
+import { Link } from 'react-router-dom'
 
 
 
-const Cart = (producto) => {
+const Cart = () => {
 
-    const {borrarProducto, limpiarCarrito} = useContext(contexto)
-
-    const {carrito, total, setCarrito} = useContext(contexto)
+    const {borrarProducto, limpiarCarrito,carrito, finalizarCompra, total} = useContext(contexto)
         
 
   if (carrito == 0) {
@@ -31,14 +30,21 @@ const Cart = (producto) => {
                   </div>
                   <div className='derechaCarrito'>
                     <h2 className='tituloCarrito'>{producto.title}</h2>
-                    <h4 className='cantidadCarrito'>Precio unitario: {producto.precio}$</h4>
-                    <h4 className='cantidadCarrito'>Cantidad: {producto.cantidad}</h4>
-                    <h5 className='totalCarrito'>Total:  ${producto.cantidad * producto.precio}</h5>
+                    <h4 className='cantidadCarrito'><b>Precio unitario:</b> ${producto.precio}</h4>
+                    <h4 className='cantidadCarrito'><b>Cantidad:</b>  {producto.nuevaCantidad}</h4>
+                    <h4 className='cantidadCarrito'><b>Subtotal:</b> ${producto.nuevaCantidad * producto.precio}</h4>
                     <button className='botonEliminarCarrito' onClick={borrarProducto}>ELIMINAR DEL CARRITO</button>
                   </div>
                 </div>
             ))}
-        </div>
+            <div className='flexFinalizarCompra'>
+                <h2 className='totalCompra'>EL TOTAL DE LA COMPRA ES DE:  ${total}</h2>
+                <button className='finalizarCompra' onClick={finalizarCompra}>FINALIZAR COMPRA</button>
+                <Link to="/productos"><button className='seguirComprando' onClick={finalizarCompra}>VER MAS PRODUCTOS</button></Link>
+            </div>
+            
+
+      </div>
     </div>
   )
 }

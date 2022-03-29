@@ -41,10 +41,11 @@
 }
 
 .vaciarCarrito{
-    background-color: gray;
+    background-color: red;
     border: 1px solid lightgray;
-    width: 12rem;
-    margin-left: 75%;
+    width: 14rem;
+    height: 2.5rem;
+    margin-left: 80%;
     padding: 0.3rem;
     border-radius: 10px;
     color: white;
@@ -52,7 +53,7 @@
 }
 
 .vaciarCarrito:hover{
-    background-color: lightgray;
+    background-color: rgb(160, 0, 0);
     color: white;
 }
 
@@ -101,7 +102,7 @@
 
 .botonEliminarCarrito{
     margin-top: 2rem;
-    background-color: gray;
+    background-color: red;
     border: none;
     width: 18rem;
     height: 3rem;
@@ -112,7 +113,60 @@
 }
 
 .botonEliminarCarrito:hover{
-    background-color: lightgray;
+    background-color: rgb(160, 0, 0);
+    color: white;
+}
+
+.flexFinalizarCompra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 32%;
+}
+
+.totalCompra{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.9rem;
+    margin-left: 4rem;
+}
+
+.finalizarCompra{
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background-color: royalblue;
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.finalizarCompra:hover{
+    background-color: #6988E7;
+    color: white;
+}
+
+.seguirComprando{
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(255, 128, 0);
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.seguirComprando:hover{
+    background-color: rgb(255, 200, 80);
     color: white;
 }
 
