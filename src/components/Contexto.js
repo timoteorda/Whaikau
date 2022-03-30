@@ -35,6 +35,8 @@ const MiProvider = ({ children }) => {
 
     const borrarProducto = (id) => {
         setCarrito(carrito.filter((producto) => producto.id !== id));
+        setCantidad(cantidad - 1)
+        setTotal(total - carrito.find(producto => producto.id === id).precio)
     };
     
     const finalizarCompra = () => {

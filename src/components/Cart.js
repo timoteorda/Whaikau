@@ -33,7 +33,11 @@ const Cart = () => {
                     <h4 className='cantidadCarrito'><b>Precio unitario:</b> ${producto.precio}</h4>
                     <h4 className='cantidadCarrito'><b>Cantidad:</b>  {producto.nuevaCantidad}</h4>
                     <h4 className='cantidadCarrito'><b>Subtotal:</b> ${producto.nuevaCantidad * producto.precio}</h4>
-                    <button className='botonEliminarCarrito' onClick={borrarProducto}>ELIMINAR DEL CARRITO</button>
+                    <button
+                        className='botonEliminarCarrito' 
+                        onClick={()=> borrarProducto(producto.id)}>
+                        ELIMINAR DEL CARRITO
+                    </button>
                   </div>
                 </div>
             ))}
