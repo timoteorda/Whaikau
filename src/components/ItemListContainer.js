@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemList from './ItemDetail';
+import ItemList from './ItemList';
 import {useState, useEffect} from 'react'
 import { toast } from 'react-toastify';
 import { useParams } from "react-router-dom";
@@ -16,7 +16,7 @@ const ItemListContainer = () => {
 
         const productosCollection = collection(db, "Productos")
         const consulta = getDocs(productosCollection)
-        
+
         consulta
           .then((resultado) => {
               const resultadoPedido = resultado.docs.map((doc) => {
