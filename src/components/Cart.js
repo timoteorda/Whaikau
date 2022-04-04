@@ -2,8 +2,6 @@ import React, { useContext } from 'react'
 import {contexto} from './Contexto'
 import { Link } from 'react-router-dom'
 
-
-
 const Cart = () => {
 
     const {borrarProducto, limpiarCarrito,carrito, finalizarCompra, total} = useContext(contexto)
@@ -46,8 +44,6 @@ const Cart = () => {
                 <button className='finalizarCompra' onClick={finalizarCompra}>FINALIZAR COMPRA</button>
                 <Link to="/productos"><button className='seguirComprando' onClick={finalizarCompra}>VER MAS PRODUCTOS</button></Link>
             </div>
-            
-
       </div>
     </div>
   )

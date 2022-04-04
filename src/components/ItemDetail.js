@@ -1,7 +1,6 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import { useState } from 'react'
-import Contexto from './Contexto'
 import { useContext } from 'react'
 import { contexto } from './Contexto'
 

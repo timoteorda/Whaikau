@@ -5,10 +5,9 @@ const { Provider } = contexto
 
 const MiProvider = ({ children }) => {
 
-    const [cantidad, setCantidad] = useState(0) //Para el total de productos en el carrito en navbar
+    const [cantidad, setCantidad] = useState(0) 
     const [carrito, setCarrito] = useState([])
-    const [total, setTotal] = useState(0) // Precio total del carrito
-    
+    const [total, setTotal] = useState(0) 
     
     const yaExisteEnCarrito = (id) => {
         return carrito.some(function(producto) {

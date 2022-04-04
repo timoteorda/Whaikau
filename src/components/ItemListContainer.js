@@ -1,57 +1,38 @@
-import React, {useEffect, useState} from 'react'
-import ItemList from './ItemList'
-import Productos from './Productos'
+import React from 'react';
+import ItemList from './ItemDetail';
+import {useState, useEffect} from 'react'
 import { toast } from 'react-toastify';
+import { useParams } from "react-router-dom";
+import { collection} from 'firebase/firestore';
+import { getDocs } from 'firebase/firestore';
+import { db } from "./firebase"
 
-function ItemListContainer() {
+const ItemListContainer = () => {
+      
+    const [producto, setProducto] = useState({});
+    const { idProducto } = useParams()
 
-    const[productos ,setProductos] = useState([]);
-    const [loading, setLoading] = useState(true);
+    useEffect(() => {
 
-    useEffect(()=>{
-
-        function getDatos (){
-            return new Promise((resolve, reject) =>{            
-                resolve(Productos);   
-            });
-        }
-
-        getDatos()
-            .then((resultado)=>{
-                toast.dismiss()
-                setProductos(resultado)
-            })            
-            .catch(()=>{
-                toast.error("Error al cargar los productos")
-            })
-            .finally(()=>{
-                setLoading(false)
-            })
-    },[])
-
-    if (loading){
-        return toast.info('Cargando los productos...', {
-            position: "top-left",
-            autoClose: 1000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            });
-    } else{
+        const productosCollection = collection(db, "Productos")
+        const consulta = getDocs(productosCollection)
+        
+        consulta
+          .then((resultado) => {
+              const resultadoPedido = resultado.docs.map((doc) => {
+                return doc.data()
+              })
+                setProducto(resultadoPedido)
+          })
+          .catch(() => toast.error("Error al cargar los productos"))
+    
+      }, [idProducto])
+       
         return (
-        <>
-        <div className='divIdeals'>
-            <h1 className="tituloIdeals">FOLLOW YOUR IDEALS</h1>
-            <img className='iconoOla' src="../img/ola.png" alt="Ola" />
-        </div>     
-        <ItemList productos={productos}/> 
-        </>
-    )}
-}
-
-
+          <ItemList producto={producto} />
+        )
+    }
+    
 
 
 export default ItemListContainer
