@@ -1,36 +1,43 @@
-import React from 'react'
-import Productos from './Productos'
+import React from 'react';
+import ItemList from './ItemList';
+import {useState, useEffect} from 'react'
 import { toast } from 'react-toastify';
-import ItemList from './ItemList'
-import { useEffect, useState } from 'react';
+import { collection} from 'firebase/firestore';
+import { getDocs, query, where } from 'firebase/firestore';
+import { db } from "./firebase"
 
 const Madera = () => {
-
-    const madera = Productos.filter(x => x.categoria == "madera")
 
     const[productos ,setProductos] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        function getDatos (){
-            return new Promise((resolve, reject) =>{            
-                resolve(madera);   
-            });
-        }
+      if(!productos){
 
-        getDatos()
-            .then((resultado)=>{
-                toast.dismiss()
-                setProductos(resultado)
-            })            
-            .catch(()=>{
+          const productosCollection = collection(db, "Productos")
+          const pedido = getDocs(productosCollection)
+  
+          pedido
+              .then(res => setProductos(res.docs.map(doc => doc.data())))
+              .catch(() => toast.error("Error al cargar los productos"))
+              .finally(() => setLoading(false))
+
+      }else{
+
+          const productosCollection = collection(db, "Productos")
+          const filtro = query(productosCollection,where("categoria","==","madera"))
+          const pedido = getDocs(filtro)
+
+          pedido
+              .then(res => setProductos(res.docs.map(doc => doc.data())))
+              .catch((error) => {
+                console.error(error)
                 toast.error("Error al cargar los productos")
-            })
-            .finally(()=>{
-                setLoading(false)
-            })
-    },[])
+              })
+      }
+    
+      }, [])
 
     if (loading){
         return toast.info('Cargando los productos...', {
@@ -51,6 +58,7 @@ const Madera = () => {
             <img className='iconoOla' src="../img/ola.png" alt="Ola" />
         </div>     
         <ItemList productos={productos}/> 
+        setLoading(false)
         </>
     )}
 }

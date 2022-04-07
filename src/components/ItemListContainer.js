@@ -3,30 +3,40 @@ import ItemList from './ItemList';
 import {useState, useEffect} from 'react'
 import { toast } from 'react-toastify';
 import { useParams } from "react-router-dom";
-import { collection} from 'firebase/firestore';
-import { getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, where} from 'firebase/firestore';
 import { db } from "./firebase"
 
 const ItemListContainer = () => {
-      
-    const [producto, setProducto] = useState({});
-    const { idProducto } = useParams()
 
-    useEffect(() => {
+  const [producto, setProductos] = useState([])
+  const { idCategoria } = useParams()
+  const [loading, setLoading] = useState(true)
 
-        const productosCollection = collection(db, "Productos")
-        const consulta = getDocs(productosCollection)
+  useEffect(() => {
 
-        consulta
-          .then((resultado) => {
-              const resultadoPedido = resultado.docs.map((doc) => {
-                return doc.data()
+      if(!idCategoria){
+          const productosCollection = collection(db, "Productos")
+          const pedido = getDocs(productosCollection)
+
+          pedido
+              .then(res => setProductos(res.docs.map(doc => doc.data())))
+              .catch(() => toast.error("Error al cargar los productos"))
+              .finally(() => setLoading(false))
+
+      }else{
+
+          const productosCollection = collection(db, "Productos")
+          const filtro = query(productosCollection,where("category","==",idCategoria))
+          const pedido = getDocs(filtro)
+
+          pedido
+              .then(res => setProductos(res.docs.map(doc => doc.data())))
+              .catch(() => {
+                toast.error("Error al cargar los productos")
               })
-                setProducto(resultadoPedido)
-          })
-          .catch(() => toast.error("Error al cargar los productos"))
-    
-      }, [idProducto])
+      }
+    }, [])
+
        
         return (
           <ItemList producto={producto} />
