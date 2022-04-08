@@ -14,33 +14,37 @@ const ItemListContainer = () => {
 
   useEffect(() => {
 
-      if(!idCategoria){
-          const productosCollection = collection(db, "Productos")
-          const pedido = getDocs(productosCollection)
+    if(!idCategoria){
 
-          pedido
-              .then(res => setProductos(res.docs.map(doc => doc.data())))
-              .catch(() => toast.error("Error al cargar los productos"))
-              .finally(() => setLoading(false))
+        const productosCollection = collection(db, "Productos")
+        const pedido = getDocs(productosCollection)
 
-      }else{
+        pedido
+            .then(respuesta => setProductos(respuesta.docs.map(doc => doc.data())))
+            .catch(() => toast.error("Error al cargar los productos"))
+            .finally(() => setLoading(false))
 
-          const productosCollection = collection(db, "Productos")
-          const filtro = query(productosCollection,where("category","==",idCategoria))
-          const pedido = getDocs(filtro)
+    }else{
 
-          pedido
-              .then(res => setProductos(res.docs.map(doc => doc.data())))
-              .catch(() => {
-                toast.error("Error al cargar los productos")
-              })
+        const productosCollection = collection(db, "Productos")
+        const filtro = query(productosCollection,where("categoria","==",idCategoria))
+        const pedido = getDocs(filtro)
+
+        pedido
+            .then(respuesta => setProductos(respuesta.docs.map(doc => doc.data())))
+            .catch(() => toast.error("Error al cargar los productos"))
+            .finally(() => setLoading(false))
+    }
+
+}, [idCategoria])
+
+      if (loading) {
+        return <h1 className='tituloCargando'>Cargando los productos, ¡por favor espere!</h1>
       }
-    }, [])
-
-       
+      else {	
         return (
           <ItemList producto={producto} />
-        )
+        )}
     }
     
 
