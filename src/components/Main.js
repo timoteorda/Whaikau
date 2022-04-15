@@ -6,7 +6,6 @@ import { Route, Routes } from 'react-router-dom'
 import MensajePagos from './MensajePagos'
 import PaginaMain from './PaginaMain'
 import PaginaProductos from './PaginaProductos'
-import ConfirmarCompra from './ConfirmarCompra'
 
 
 const Main = () => {
@@ -18,7 +17,6 @@ const Main = () => {
                 <Route path="/productos" element={<PaginaProductos/>} />
                 <Route path="/categoria/:idCategoria" element={<PaginaProductos/>}/>
                 <Route path="/producto/:idProducto" element={<ItemDetailContainer/>} />
-                <Route path="/confirmarCompra" element={<ConfirmarCompra/>} />
                 <Route path="/contacto" element={<Contacto/>} />
                 <Route path="/cart" element={<Cart/>} />
             </Routes>

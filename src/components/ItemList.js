@@ -1,10 +1,10 @@
 import Item from "./Item"
 
 
-function ItemList({productos}) {
+function ItemList({producto}) {
   return(
     <section  className='sectionCard'>
-      {productos.map(producto =>{
+      {producto.map(producto =>{
         return(
             <Item
               key={producto.id}
