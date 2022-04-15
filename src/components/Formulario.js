@@ -13,7 +13,7 @@ const Formulario = () => {
           <Input type="email" name="email"/>
         </FormGroup>
         <FormGroup>
-          <Label for="telefono" className='tituloForm'>TELEFONO</Label>
+          <Label for="telefono" className='tituloForm'>TELÉFONO</Label>
           <Input type="text" name="telefono"/>
         </FormGroup>
         <FormGroup>

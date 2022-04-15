@@ -11,6 +11,16 @@
     border: none;
 }
 
+.imagenSeccionMain{
+    width: 340px;
+    height: 21rem;
+    transition: all 0.5s ease;
+}
+
+.imagenSeccionMain:hover{
+    transform: scale(1.02);
+}
+
 .icono{
     width: 16px;
     height: 16px;

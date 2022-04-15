@@ -1,0 +1,53 @@
+.formPago{
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    margin-left: 30%;
+}
+
+.totalPagar{
+    margin-top: 3rem;
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: darkgrey;
+}
+
+.inputPago{
+    width: 80%;
+    height: 3rem;
+}
+
+.flexPago{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloFormPago{
+    width: 12rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.columnTarjetas{
+    display: flex;
+}
+
+.iconosTarjetas{
+    margin-left: 0.6rem;
+    display: flex;
+}
+
+.tarjetaIcono{
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.flexTarjetaCvv{
+    display: flex;
+}
+
+.confirmarCompra{
+    margin-left: 25%;
+    margin-top: 2rem;
+}

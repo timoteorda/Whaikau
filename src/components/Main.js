@@ -10,7 +10,7 @@ import Hombres from './Hombres'
 import Mujeres from './Mujeres'
 import Madera from './Madera'
 import PaginaAccesorios from './PaginaAccesorios'
-
+import ConfirmarCompra from './ConfirmarCompra'
 
 
 const Main = () => {
@@ -25,6 +25,7 @@ const Main = () => {
                 <Route path="/categoria/madera" element={<Madera/>} />
                 <Route path="/categoria/accesorios" element={<PaginaAccesorios/>} />
                 <Route path="/producto/:idProducto" element={<ItemDetailContainer/>} />
+                <Route path="/confirmarCompra" element={<ConfirmarCompra/>} />
                 <Route path="/contacto" element={<Contacto/>} />
                 <Route path="/cart" element={<Cart/>} />
             </Routes>
