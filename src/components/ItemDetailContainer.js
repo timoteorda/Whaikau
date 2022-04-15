@@ -26,7 +26,7 @@ const ItemDetailContainer = () => {
         if (loading){
             return toast.info('Cargando producto...', {
               position: "top-left",
-              autoClose: 500,
+              autoClose: 1200,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,

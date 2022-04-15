@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where} from 'firebase/firestore';
 import { db } from "./firebase"
+import { Link } from 'react-router-dom'
 
 const ItemListContainer = () => {
 
@@ -43,7 +44,13 @@ const ItemListContainer = () => {
       }
       else {	
         return (
+        <>
+        <div className='divIdeals'>
+            <h1 className="tituloIdeals">FOLLOW YOUR IDEALS</h1>
+            <img className='iconoOla' src="../img/ola.png" alt="Ola" />
+        </div> 
           <ItemList producto={producto} />
+        </>
         )}
     }
     
