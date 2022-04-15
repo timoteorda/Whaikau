@@ -71,7 +71,8 @@ const ItemListContainer = () => {
                 </div>     
                 <ItemList producto={producto}/> 
                 </>
-            )}
+            )
+        }
     }
     
     
