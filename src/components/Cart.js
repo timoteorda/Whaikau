@@ -41,7 +41,7 @@ const Cart = () => {
             ))}
             <div className='flexFinalizarCompra'>
                 <h2 className='totalCompra'>EL TOTAL DE LA COMPRA ES DE:  ${total}</h2>
-                <Link to='/confirmarCompra'><button className='finalizarCompra' onClick={finalizarCompra}>FINALIZAR COMPRA</button></Link>
+                <button className='finalizarCompra' onClick={finalizarCompra}>FINALIZAR COMPRA</button>
                 <Link to="/productos"><button className='seguirComprando' onClick={finalizarCompra}>VER MAS PRODUCTOS</button></Link>
             </div>
       </div>

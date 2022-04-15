@@ -22,30 +22,6 @@ main {
     justify-content: center;
 }
 
-.mainImagenesUrl{
-    margin-top: 1rem;
-    justify-content:space-between;
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: row;
-}
-
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-.tituloEncimaImagen{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-weight: bold;
-}
-
 .tituloIdeals{
     font-size: 1.2rem;
     font-weight: bold;
