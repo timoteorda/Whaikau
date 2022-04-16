@@ -1,0 +1,41 @@
+<div class="navbar">
+  <a className='liNav' href="#">INICIO</a>
+  <div class="subnav">
+    <button class="subnavbtn">PRODUCTOS <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a className='liNav' href="#">HOMBRE</a>
+      <a className='liNav' href="#">MUJER</a>
+      <a className='liNav' href="#">ACCESORIOS</a>
+      <a className='liNav' href="#">MADERA</a>
+    </div>
+  </div>
+  <a  className='liNav' href="#">CONTACTO</a>
+</div>
+
+
+
+
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+}
+
+/* The subnavigation menu */
+.subnav {
+  overflow: hidden;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}

@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
-    const ItemCount = () => {
+    const ItemCount = ({onAdd, stock}) => {
 
         let [cant, setCant] = useState(1)
-    
-        let stock = 15
-    
+
         const handleSumar= () => {
             if (cant < stock)
             setCant (cant + 1)
@@ -14,21 +13,24 @@ import React, { useState } from 'react'
             if (cant > 1)
             setCant (cant - 1)
         }
-
-    function onAdd (){
-        console.log ("Usted a añadido" ,cant, "unidades al carrito")
-    }
-
+        const handleCarrito = () => {
+            onAdd(cant)
+        }
+        
     return(                
         <div className='divContador'>
-            <h3 className="tituloContador">Seleccione la cantidad de unidades</h3>
-                <div className='flexContador'>
-                    <button className='botonContador' onClick={handleRestar}>-</button>                    
-                    <h3>{cant}</h3>
-                    <button className='botonContador' onClick={handleSumar}>+</button>
-                </div>
-            <button className='agregarCarrito' onClick={onAdd}>Agregar al carrito</button>
-        </div>                
+                <div>
+                    <h3 className="tituloContador">Seleccione la cantidad de unidades</h3>
+                        <div className='flexContador'>
+                            <button className='botonContador' onClick={handleRestar}>-</button>                    
+                            <h3 className='cantContador'>{cant}</h3>
+                            <button className='botonContador' onClick={handleSumar}>+</button>
+                        </div>
+                    <button className='agregarCarrito' onClick={handleCarrito}>Agregar al carrito</button>
+                </div>   
+            <Link to="/Cart"><button className='linkCarrito'>Ir al carrito</button></Link>
+        </div>
+                            
     )
 }
 export default ItemCount

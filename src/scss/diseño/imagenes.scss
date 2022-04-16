@@ -1,0 +1,69 @@
+.logoWhaikau{
+    width: 16rem;
+    height: 5.5rem;
+    margin-top: 2rem;
+}
+
+.banner{
+    margin: 1rem 5%;
+    width: 90%;
+    height: 38rem;
+    border: none;
+}
+
+.imagenSeccionMain{
+    width: 370px;
+    height: 21rem;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+}
+
+.imagenSeccionMain:hover{
+    transform: scale(1.02);
+}
+
+.icono{
+    width: 16px;
+    height: 16px;
+    border-radius:5px;
+}
+
+.iconoContacto{
+    width: 24px;
+    height: 24px;
+}
+
+.imagenContacto{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.bannerProductos{
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.imagenDetail{
+    margin-top: 5rem;
+    height: 25rem;
+    margin-left: 25%;    
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.imagenDetail:hover {
+    -webkit-transform: scale(1.3); 
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.imagenCarrito{
+    height: 20rem;
+    margin-top: 3rem;
+}

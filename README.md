@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# WHAIKAU
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Este proyecto representa el e-Commerce de la marca de ropa de dos emprendedores, llamada Whaikau. Se busca generar una pagina accesible con el usuario para que pueda acceder facilmente a la compra de productos online.
 
-## Available Scripts
+## Link al proyecto:
 
-In the project directory, you can run:
+https://whaikau.vercel.app/
 
-### `npm start`
+## Acerca de mi:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mi nombre es Timoteo. Tengo 25 años y soy Licenciado en Turismo. En el año 2021 me inserté en el ambito del desarrollo web y de la programación llevando a cabo un curso de Front-End Developer. En el año 2022 y gracias al interés que me genero dicho curso decidí ingresar en la carrera de Licenciatura en Sistemas, la cual me encuentro realizando actualmente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Contacto:
 
-### `npm test`
+Frente a cualquier consulta puede contactarme via E-Mail: timoteorda@gmail.com
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Herramientas utilizadas:
+1. React v. 17.0.2;
+   E-Commerce creado con la librería de Javascript, React JS, en su versión 17.
+2. Firebase v. 9.6.11;
+   Se utilizó Firebase como base de datos para alojar el catálogo de productos que ofrece la marca.
+3. Node-Sass: v. 7.0.1;
+   Se empleó SASS, el preprocesador de CSS para un codigo mas limpio y accesible.
+4. React-Bootstrap v. 2.2.0;
+   Se utilizó React-Bootstrap para utilizar el Carousel.
+5. React-Router-Dom v. 6.2.2;
+   Se dispuso de React Router Dom para generar las rutas dinámicas a los diferentes sitios de mi E-Commerce
+6. React-Toastify v. 8.2.0;
+   Se utilizó la librería de React Toastify para realizar notificaciones acerca de lo que esta sucediendo en la pagina, principalmente con la espera de carga de productos.
+7. Reactstrap v. 9.0.1;
+   Se empleó ReactStrap para generar los formularios, tanto de contacto como el de pago.

@@ -1,0 +1,110 @@
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.tituloCargando{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mainImagenesUrl{
+    margin-top: 1rem;
+    justify-content:space-around;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.tituloEncimaImagen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+}
+
+.divIdeals{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloIdeals{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 6rem 0rem;
+}
+
+.iconoOla{
+    height: 32px;
+    width: 32px;
+    margin-top: 5.6rem;
+    margin-left: 1rem;
+}
+
+.verTodosProductos{
+    background-color: rgb(170,170,170);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 20rem;
+    height: 2rem;
+    margin-left: 40%;
+    margin-top: 2rem;
+}
+
+.verTodosProductos:hover{
+    background-color: rgb(200,200,200);
+}
+                                    //AREA SEGUINOS IG INDEX
+
+.seguinosIg{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logoIgIndex{
+    margin-top: 0.8rem;
+}
+
+.divSeguinosTexto{
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.seguinosTexto{
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+}
+
+.seguinosArroba{
+    font-weight: bold;
+    color: black;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}

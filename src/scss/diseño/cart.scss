@@ -1,0 +1,246 @@
+.cart{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    height: 90vh;
+}
+
+.derechaDetail{	
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloDetail{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-left: 14rem;
+    margin-top: 2rem;
+}
+
+.precioDetail{
+    margin-left: 14rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.counterDetail{
+    margin-top: -2rem;
+}
+
+
+                                                //PAGINA CART
+
+.carritoVacio{
+    font-size: 1.6rem;
+    margin-left: 31%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.vaciarCarrito{
+    background-color: red;
+    border: 1px solid lightgray;
+    width: 14rem;
+    height: 2.5rem;
+    margin-left: 80%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1rem;
+}
+
+.vaciarCarrito:hover{
+    background-color: rgb(160, 0, 0);
+    color: white;
+}
+
+.contenedorCarrito{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5rem;
+}
+
+.flexCarrito{
+    display: flex;
+    margin: 0% 10%;
+    justify-content: space-around;
+}
+
+.derechaCarrito{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.tituloCarrito{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cantidadCarrito{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+
+}
+
+.totalCarrito{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.mensajeCarrito{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+    border-bottom: solid 1px lightgray;
+    padding: 1rem;
+}
+
+.botonEliminarCarrito{
+    margin-top: 2rem;
+    background-color: red;
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.botonEliminarCarrito:hover{
+    background-color: rgb(160, 0, 0);
+    color: white;
+}
+
+.flexFinalizarCompra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 80%;
+    margin-left: 32%;
+}
+
+.totalCompra{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.9rem;
+    margin-left: 4rem;
+}
+
+.finalizarCompra{
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background-color: royalblue;
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.finalizarCompra:hover{
+    background-color: #6988E7;
+    color: white;
+}
+
+.seguirComprando{
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(255, 128, 0);
+    border: none;
+    width: 18rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+.seguirComprando:hover{
+    background-color: rgb(255, 200, 80);
+    color: white;
+}
+
+                                                //CONTADOR//
+
+.divContador{
+    height: 13rem;
+    margin-left:35%;
+    margin-top: 4rem;
+    border-radius: 25px;
+}
+
+.tituloContador{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.flexContador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 2.3rem;
+}
+
+.botonContador{ 
+    background-color: white;
+    color: lightblue;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cantContador{
+    margin-top: 0.8rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.agregarCarrito{
+    margin: 2rem 2.2rem;
+    background-color: lightgray;
+    border: none;
+    font-weight: bold;
+    width: 80%;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.agregarCarrito:hover{
+    background-color: gray;
+}
+
+.linkCarrito{
+    margin-left: 2.2rem;
+    background-color: lightgray;
+    border: none;
+    font-weight: bold;
+    width: 80%;
+    height: 3rem;
+    border-radius: 10px;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.linkCarrito:hover{
+    background-color: gray;
+}

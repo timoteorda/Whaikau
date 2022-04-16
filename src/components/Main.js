@@ -1,18 +1,28 @@
 import React from 'react'
-import ItemCount from './ItemCount'
-import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer'
+import Contacto from './Contacto'
+import Cart from './Cart'
+import { Route, Routes } from 'react-router-dom'
+import MensajePagos from './MensajePagos'
+import PaginaMain from './PaginaMain'
+import PaginaProductos from './PaginaProductos'
+import ConfirmarCompra from './ConfirmarCompra'
 
 
 const Main = () => {
 
-    const persona = {
-        nombre: 'Timoteo',
-    }
-
     return (
-            <main>
-                <ItemListContainer persona = {persona} /> 
-                <ItemCount />    
+            <main>               
+            <Routes>
+                <Route path="/" element={<PaginaMain/>} />
+                <Route path="/productos" element={<PaginaProductos/>} />
+                <Route path="/categoria/:idCategoria" element={<PaginaProductos/>}/>
+                <Route path="/producto/:idProducto" element={<ItemDetailContainer/>} />
+                <Route path="/contacto" element={<Contacto/>} />
+                <Route path="/cart" element={<Cart/>} />
+                <Route path="/confirmarCompra" element={<ConfirmarCompra/>} />
+            </Routes>
+            <MensajePagos/>
             </main>
     )
 }
