@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Cart = () => {
 
-    const {borrarProducto, limpiarCarrito,carrito, finalizarCompra, total} = useContext(contexto)
+    const {borrarProducto, limpiarCarrito,carrito, total} = useContext(contexto)
         
 
   if (carrito == 0) {
@@ -42,7 +42,7 @@ const Cart = () => {
             <div className='flexFinalizarCompra'>
                 <h2 className='totalCompra'>EL TOTAL DE LA COMPRA ES DE:  ${total}</h2>
                 <Link to='/confirmarCompra'><button className='finalizarCompra'>FINALIZAR COMPRA</button></Link>
-                <Link to="/productos"><button className='seguirComprando' onClick={finalizarCompra}>VER MAS PRODUCTOS</button></Link>
+                <Link to="/productos"><button className='seguirComprando' >VER MAS PRODUCTOS</button></Link>
             </div>
       </div>
     </div>
