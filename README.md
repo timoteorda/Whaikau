@@ -6,6 +6,8 @@
 
 https://whaikau.vercel.app/
 
+## Video del proyecto:
+
 [![Alt text](https://img.youtube.com/vi/xvNqpMoMFag/0.jpg)](https://www.youtube.com/watch?v=xvNqpMoMFag)
 
 ## Acerca de mi:
