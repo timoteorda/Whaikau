@@ -7,6 +7,7 @@ import MensajePagos from './MensajePagos'
 import PaginaMain from './PaginaMain'
 import PaginaProductos from './PaginaProductos'
 import ConfirmarCompra from './ConfirmarCompra'
+import GraciasCompra from './GraciasCompra'
 
 
 const Main = () => {
@@ -21,6 +22,7 @@ const Main = () => {
                 <Route path="/contacto" element={<Contacto/>} />
                 <Route path="/cart" element={<Cart/>} />
                 <Route path="/confirmarCompra" element={<ConfirmarCompra/>} />
+                <Route path="/graciasCompra" element={<GraciasCompra/>} />
             </Routes>
             <MensajePagos/>
             </main>

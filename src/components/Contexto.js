@@ -43,7 +43,9 @@ const MiProvider = ({ children }) => {
         setCarrito([])
         setTotal(0)
 
-        console.log("Muchas gracias por su compra")
+        return(
+            console.log('Compra finalizada')
+        )
     }
 
     const limpiarCarrito = () => {

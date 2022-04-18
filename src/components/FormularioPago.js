@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react'
 import {contexto} from './Contexto'
 import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
+import {Link} from 'react-router-dom'
+
 
 const FormularioPago = () => {
 
@@ -86,7 +88,7 @@ const FormularioPago = () => {
                 />
             </FormGroup>
         </div>
-        <Button type='submit' onClick={finalizarCompra} className='confirmarCompra'>Confirmar Compra</Button>
+        <Link to='/GraciasCompra'><Button type='submit' onClick={finalizarCompra} className='confirmarCompra'>Confirmar Compra</Button></Link>
       </Form>
     </>
   )
