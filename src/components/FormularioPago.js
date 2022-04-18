@@ -1,11 +1,21 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import {contexto} from './Contexto'
 import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
 
-
 const FormularioPago = () => {
 
+    const {finalizarCompra} = useContext(contexto)
     const {total} = useContext(contexto)
+
+    const [form, setForm] = useState({nombre:'', telefono:'', email:'', direccion:'',tarjeta:'' , expiracion:'', cvv:''})
+    
+    const handleChange = (e) => {
+        const {name,value} = e.target
+        setForm({
+            ...form,
+            [name]: value,
+        })
+    }
 
   return (
     <>
@@ -14,49 +24,49 @@ const FormularioPago = () => {
         <FormGroup>
             <div className='flexPago'>
                 <Label for="nombre" className='tituloFormPago'>NOMBRE Y APELLIDO</Label>
-                <Input type="text" name="nombre" className='inputPago' required/>
+                <Input onChange={handleChange} type="text" name="nombre" className='inputPago' required/>
             </div>
         </FormGroup>
         <FormGroup>
             <div className='flexPago'>
-                <Label for="telefono" className='tituloFormPago'>TELÉFONO</Label>
+                <Label onChange={handleChange} for="telefono" className='tituloFormPago'>TELÉFONO</Label>
                 <Input type="text" name="telefono" className='inputPago' required/>
             </div>
         </FormGroup>
         <FormGroup>
             <div className='flexPago'>
-                <Label for="exampleEmail" className='tituloFormPago'>EMAIL</Label>
+                <Label onChange={handleChange} for="exampleEmail" className='tituloFormPago'>EMAIL</Label>
                 <Input type="email" name="email" className='inputPago' required/>
             </div>
         </FormGroup>
         <FormGroup>
             <div className='flexPago'>
-                <Label for="nombre" className='tituloFormPago'>DIRECCIÓN DE ENVÍO</Label>
-                <Input type="text" name="nombre" className='inputPago' required/>
+                <Label onChange={handleChange} for="nombre" className='tituloFormPago'>DIRECCIÓN DE ENVÍO</Label>
+                <Input type="text" name="direccion" className='inputPago' required/>
             </div>
         </FormGroup>
         <FormGroup>
             <div className='flexPago'>
                 <div className='columnTarjetas'>
-                    <Label for="exampleText" className='tituloFormPago'>NÚMERO DE TARJETA</Label>
+                    <Label onChange={handleChange} for="exampleText" className='tituloFormPago'>NÚMERO DE TARJETA</Label>
                     <div className='iconosTarjetas'>
                         <div className='tarjetaIcono'><img src="../img/maestro.png" alt="iconoMaestro"/></div>
                         <div className='tarjetaIcono'><img src="../img/visa.png" alt="iconoVisa"/></div>
                         <div className='tarjetaIcono'><img src="../img/amex.png" alt="iconoAmex"/></div>
                     </div>
                 </div>
-                <Input type="text" name="numeroTarjeta" className='inputPago' required/>
+                <Input type="text" name="tarjeta" className='inputPago' required/>
             </div>  
         </FormGroup>
         <div className='flexTarjetaCvv'>
             <FormGroup>
                 <div className='flexPago'>
-                    <Label for="exampleDate" className='tituloFormPago'>
+                    <Label onChange={handleChange} for="exampleDate" className='tituloFormPago'>
                     EXPIRACIÓN
                     </Label>
                     <Input
                     id="exampleDate"
-                    name="date"
+                    name="expiracion"
                     placeholder="date placeholder"
                     type="month"
                     className='inputPago'
@@ -65,18 +75,18 @@ const FormularioPago = () => {
                 </div>
             </FormGroup>
             <FormGroup>
-                <Label for="exampleZip" className='tituloFormPago'>
+                <Label onChange={handleChange} for="exampleZip" className='tituloFormPago'>
                     CVV
                 </Label>
                 <Input
                     id="exampleZip"
-                    name="zip"
+                    name="cvv"
                     className='inputPago'
                     required
                 />
             </FormGroup>
         </div>
-        <Button className='confirmarCompra'>Confirmar Compra</Button>
+        <Button type='submit' onClick={finalizarCompra} className='confirmarCompra'>Confirmar Compra</Button>
       </Form>
     </>
   )

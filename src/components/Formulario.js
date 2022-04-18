@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const Formulario = () => {
   return (
@@ -20,7 +20,7 @@ const Formulario = () => {
           <Label for="exampleText" className='tituloForm'>MENSAJE</Label>
           <Input type="textarea" name="text" className='cuadradoMensaje'/>
         </FormGroup>
-        <Button>Submit</Button>
+        <Button type='submit'>Submit</Button>
       </Form>
   )
 }
