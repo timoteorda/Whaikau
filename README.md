@@ -6,6 +6,8 @@
 
 https://whaikau.vercel.app/
 
+[![Alt text](https://img.youtube.com/vi/xvNqpMoMFag/0.jpg)](https://www.youtube.com/watch?v=xvNqpMoMFag)
+
 ## Acerca de mi:
 
 Mi nombre es Timoteo. Tengo 25 años y soy Licenciado en Turismo. En el año 2021 me inserté en el ambito del desarrollo web y de la programación llevando a cabo un curso de Front-End Developer. En el año 2022 y gracias al interés que me genero dicho curso decidí ingresar en la carrera de Licenciatura en Sistemas, la cual me encuentro realizando actualmente.
