@@ -24,11 +24,11 @@ const MiProvider = ({ children }) => {
         if(yaExisteEnCarrito(producto.id)){
             let index = copia.findIndex(item => item.id === producto.id)
             copia[index].cantidad += 1
-            setCantidad(nuevaCantidad + nuevaCantidad)
+            setCantidad(nuevaCantidad + 1)
         }
         else{
             setCarrito(copia) 
-            setCantidad(cantidad + nuevaCantidad)
+            setCantidad(cantidad + 1)
         }
     };
 
@@ -43,9 +43,7 @@ const MiProvider = ({ children }) => {
         setCarrito([])
         setTotal(0)
 
-        return(
-            console.log('Compra finalizada')
-        )
+        console.log("Muchas gracias por su compra")
     }
 
     const limpiarCarrito = () => {

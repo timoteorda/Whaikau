@@ -6,7 +6,6 @@ const GraciasCompra = () => {
   
   const aleatorio = Math.floor(Math.random() * (10000000 - 1)) + 1;
   
-  
 
   return (
     <div className='divGracias'>
