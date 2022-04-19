@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 
 
 const GraciasCompra = () => {
-    
+  
+  const aleatorio = Math.floor(Math.random() * (10000000 - 1)) + 1;
+  
+  
+
   return (
     <div className='divGracias'>
         <div className='divUnoGracias'>
@@ -11,7 +15,8 @@ const GraciasCompra = () => {
         </div>
         <div className='divDosGracias'>
             <h1 className='tituloGracias'>¡Muchas gracias!</h1>
-            <h4 className='subtituloGracias'>Su compra ha sido procesada con éxito</h4>       
+            <h4 className='subtituloGracias'>Su compra ha sido procesada con éxito</h4>
+            <h4 className='subtituloGracias'>N° de seguimiento: {aleatorio}</h4>        
             <Link to='/'><button className='volverGracias'>VER MAS PRODUCTOS</button></Link>
         </div>
 

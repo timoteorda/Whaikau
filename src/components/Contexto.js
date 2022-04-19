@@ -24,11 +24,11 @@ const MiProvider = ({ children }) => {
         if(yaExisteEnCarrito(producto.id)){
             let index = copia.findIndex(item => item.id === producto.id)
             copia[index].cantidad += 1
-            setCantidad(nuevaCantidad + 1)
+            setCantidad(nuevaCantidad + nuevaCantidad)
         }
         else{
             setCarrito(copia) 
-            setCantidad(cantidad + 1)
+            setCantidad(cantidad + nuevaCantidad)
         }
     };
 
