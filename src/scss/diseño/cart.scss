@@ -2,10 +2,10 @@
     display: flex;
     width: 80%;
     margin-left: 10%;
-    height: 90vh;
+    height: auto;
+    margin-bottom: 8rem;
     @include telefono{
         flex-direction: column;
-        margin-bottom: 30rem;
     }
 }
 
@@ -29,6 +29,9 @@
     @include telefono{
         margin-left: 0rem;
     }
+    @include computadora{
+        margin-left: 17rem;
+    }
 }
 
 .precioDetail{
@@ -37,6 +40,9 @@
     margin-top: 2rem;
     @include telefono{
         margin-left: 0rem;
+    }
+    @include computadora{
+        margin-left: 17rem;
     }
 }
 
