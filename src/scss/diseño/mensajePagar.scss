@@ -9,6 +9,10 @@
         flex-direction: column;
         width: 90%;
     }
+    @include computadora{
+        width: 70%;
+        margin-left: 15%;
+    }
 }
 
 .flexPaga{

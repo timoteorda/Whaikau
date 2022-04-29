@@ -9,6 +9,10 @@
     @include telefono{
         flex-direction: column;
     }
+    @include computadora{
+        width: 70%;
+        margin-left: 15%;
+    }
 }
 
 .contenedorContacto{

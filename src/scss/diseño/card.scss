@@ -7,6 +7,10 @@
         flex-direction: column;
         width: 90%;
     }
+    @include computadora{
+        width: 70%;
+        margin: 1rem 15%;
+    }
 }
 
 .cardProducto{

@@ -19,6 +19,10 @@
         margin: 1rem 2.5%;
         height: 20rem;
     }
+    @include computadora{
+        width: 70%;
+        margin: 1rem 15%;
+    }
 }
 
 .imagenSeccionMain{
@@ -48,12 +52,20 @@
     margin-right: 10%;
     margin-top: 2rem;
     width: 80%;
+    @include computadora{
+        width: 70%;
+        margin-left: 15%;
+    }
 }
 
 .bannerProductos{
     margin-top: 1rem;
     width: 90%;
     margin-left: 5%;
+    @include computadora{
+        width: 70%;
+        margin-left: 15%;
+    }
 }
 
 .imagenDetail{
