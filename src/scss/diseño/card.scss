@@ -62,6 +62,9 @@
         height: 11rem;
         margin: 3rem;
     }
+    @include computadora{
+        margin-left: 20%;
+    }
 }
 
 .botonCard:hover{
