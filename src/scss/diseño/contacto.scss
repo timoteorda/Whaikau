@@ -1,13 +1,21 @@
+@import "../utilities/mediaquerys";
+
 .divContacto{
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
     margin-top: 2rem;
+    @include telefono{
+        flex-direction: column;
+    }
 }
 
 .contenedorContacto{
     width: 33.33%;
+    @include telefono{
+        width: 95%;
+    }
 }
 
 .contacto{

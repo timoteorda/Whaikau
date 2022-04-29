@@ -1,5 +1,10 @@
+@import "../utilities/mediaquerys";
+
 header{
     height: 25vh;
+    @include telefono{
+        height: 40vh;
+    }
 }
 
 li a {
@@ -17,6 +22,10 @@ li {
     background-color: white;
     z-index: 10;
     box-shadow: 1px 1px 3px #999;
+    @include telefono{
+        width: 100%;
+        height: 40vh;
+    }	
 }
 
 .navegacion{
@@ -32,6 +41,9 @@ li {
     margin-top: 4rem;
     border: none;
     border-bottom: solid 1px lightgray;
+    @include telefono{
+        display: none;
+    }
 }
 
 .ulNav{
@@ -40,6 +52,10 @@ li {
     width: 20%;
     margin-left: 40%;
     margin-top: 1rem;
+    @include telefono{
+        flex-direction: column;
+        margin-left: 1rem;
+    }
 }
 
 /* Dropdown Button */

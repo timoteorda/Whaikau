@@ -1,7 +1,12 @@
+@import "../utilities/mediaquerys";
+
 .logoWhaikau{
     width: 16rem;
     height: 5.5rem;
     margin-top: 2rem;
+    @include telefono  {
+        margin-left: 0rem;
+    }
 }
 
 .banner{
@@ -9,6 +14,11 @@
     width: 80%;
     height: 38rem;
     border: none;
+    @include telefono{
+        width: 95%;
+        margin: 1rem 2.5%;
+        height: 20rem;
+    }
 }
 
 .imagenSeccionMain{
@@ -53,7 +63,11 @@
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;   
+    @include telefono{
+        margin-left: 1rem;
+        width: 95%;
+    }
 }
  
 .imagenDetail:hover {
@@ -72,5 +86,8 @@
     width: 10rem;
     height: 9rem;
     margin-left: 10rem;
-    margin-top: 2rem;
+    margin-top: 2rem;    
+    @include telefono{
+        margin-left: 30%;
+    }
 }

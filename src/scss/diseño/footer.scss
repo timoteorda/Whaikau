@@ -1,3 +1,5 @@
+@import "../utilities/mediaquerys";
+
 footer {
     height: 24vh;
 }
@@ -7,12 +9,18 @@ footer {
     padding: 2rem;
     display: flex;
     justify-content: space-around;
+    @include telefono{
+        flex-direction: column;
+    }
 }
 
 .tituloFooter{
     font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    @include telefono{
+        text-align: center;
+    }
 }
 
 .liFooter{

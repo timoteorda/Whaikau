@@ -3,6 +3,10 @@
     width: 80%;
     margin-left: 10%;
     height: 90vh;
+    @include telefono{
+        flex-direction: column;
+        margin-bottom: 30rem;
+    }
 }
 
 .derechaDetail{	
@@ -11,6 +15,10 @@
     width: 55%;
     display: flex;
     flex-direction: column;
+    @include telefono{
+        width: 95%;
+        margin-left: 0rem;
+    }
 }
 
 .tituloDetail{
@@ -18,16 +26,25 @@
     font-size: 1.6rem;
     margin-left: 14rem;
     margin-top: 2rem;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .precioDetail{
     margin-left: 14rem;
     font-weight: bold;
     margin-top: 2rem;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .counterDetail{
     margin-top: -2rem;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 
@@ -38,6 +55,9 @@
     margin-left: 31%;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .vaciarCarrito{
@@ -49,7 +69,9 @@
     padding: 0.3rem;
     border-radius: 10px;
     color: white;
-    margin-top: 1rem;
+    margin-top: 1rem;    @include telefono{
+        margin-left: 5rem;
+    }
 }
 
 .vaciarCarrito:hover{
@@ -67,11 +89,17 @@
     display: flex;
     margin: 0% 10%;
     justify-content: space-around;
+    @include telefono{
+        flex-direction: column;
+    }
 }
 
 .derechaCarrito{
     margin-top: 4rem;
     margin-left: 2rem;
+    @include telefono{
+        margin-left: -1rem;
+    }
 }
 
 .tituloCarrito{
@@ -88,6 +116,7 @@
 .totalCarrito{
     margin-top: 2rem;
     font-size: 1.2rem;
+
 }
 
 .mensajeCarrito{
@@ -110,6 +139,9 @@
     font-family:'Montserrat', sans-serif;
     cursor: pointer;
     color: white;
+    @include telefono{
+        margin-left: -1rem;
+    }
 }
 
 .botonEliminarCarrito:hover{
@@ -123,6 +155,9 @@
     margin-top: 5rem;
     width: 80%;
     margin-left: 32%;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .totalCompra{
@@ -130,6 +165,10 @@
     font-weight: bold;
     margin-top: 0.9rem;
     margin-left: 4rem;
+    @include telefono{
+        margin-left: 0rem;
+        font-size: 1.1rem;
+    }
 }
 
 .finalizarCompra{
@@ -144,6 +183,9 @@
     font-family:'Montserrat', sans-serif;
     cursor: pointer;
     color: white;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .finalizarCompra:hover{
@@ -163,6 +205,9 @@
     font-family:'Montserrat', sans-serif;
     cursor: pointer;
     color: white;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .seguirComprando:hover{
@@ -177,6 +222,9 @@
     margin-left:35%;
     margin-top: 4rem;
     border-radius: 25px;
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .tituloContador{

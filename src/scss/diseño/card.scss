@@ -3,12 +3,22 @@
     flex-wrap: wrap;
     margin: 0rem 10%;
     width: 80%;
+    @include telefono{
+        flex-direction: column;
+        width: 90%;
+    }
 }
 
 .cardProducto{
     width: 25%;
     height: 16rem;
     margin-bottom: 6rem;
+    @include telefono{
+        margin-top: -2rem;
+        height: 20rem;
+        width: 90%;
+        margin-bottom: 2rem;
+    }	
 }
 
 .producto{
@@ -18,6 +28,10 @@
     margin-top: 0.5rem;
     font-weight: bold;
     color: black;
+    @include telefono{
+        width: 80%;
+        margin-left: 2.5rem;
+    }
 }
 
 .producto:hover{
@@ -29,12 +43,19 @@
     text-align: center;
     font-size: 1.1rem;
     font-weight: 700;
+    @include telefono{
+        width: 80%;
+        margin-left: 2.5rem;
+    }
 }
 
 .imagenCard{
     margin-left: 18%;
     width: 11rem;
     height: 13rem;
+    @include telefono{
+        width: 70%;
+    }
 }
 
 .botonCard:hover{

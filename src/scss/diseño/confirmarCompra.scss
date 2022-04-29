@@ -3,6 +3,10 @@
     margin-top: 3rem;
     margin-bottom: 6rem;
     margin-left: 30%;
+    @include telefono{
+        width: 90%;
+        margin-left: 2rem;
+    }
 }
 
 .totalPagar{
@@ -11,6 +15,9 @@
     font-weight: bold;
     font-size: 1.5rem;
     color: darkgrey;
+    @include telefono{
+        margin-left: 2rem;
+    }
 }
 
 .inputPago{
@@ -45,9 +52,15 @@
 
 .flexTarjetaCvv{
     display: flex;
+    @include telefono{
+        flex-direction: column;
+    }
 }
 
 .confirmarCompra{
     margin-left: 25%;
     margin-top: 2rem;
+    @include telefono{
+        margin-left: 4rem;
+    }
 }

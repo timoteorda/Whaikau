@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: column;
     box-shadow: 3px 3px #999;
+    @include telefono{
+        margin-left: 0rem;
+        width: 100%;
+        height: 30rem;
+    }
 }
 
 .divUnoGracias{
@@ -36,6 +41,9 @@
     background-color: rgb(37,106,224);
     border-radius: 15px;
     margin-top: 1.2rem;
+    @include telefono{
+        margin-left: 5rem;
+    }
 }
 
 .volverGracias:hover{
