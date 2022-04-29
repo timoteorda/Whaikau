@@ -30,7 +30,7 @@
     color: black;
     @include telefono{
         width: 80%;
-        margin-left: 2.5rem;
+        margin-left: 2.2rem;
     }
 }
 
@@ -45,7 +45,7 @@
     font-weight: 700;
     @include telefono{
         width: 80%;
-        margin-left: 2.5rem;
+        margin-left: 2.2rem;
     }
 }
 
@@ -55,6 +55,8 @@
     height: 13rem;
     @include telefono{
         width: 70%;
+        height: 11rem;
+        margin: 3rem;
     }
 }
 
