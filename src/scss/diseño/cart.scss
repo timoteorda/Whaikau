@@ -65,6 +65,10 @@
         margin-left: 1rem;
         font-size: 1.2rem;
     }
+    @include computadora{
+        margin-left: 38%;
+    }
+
 }
 
 .vaciarCarrito{
